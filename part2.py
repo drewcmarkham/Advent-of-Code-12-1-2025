@@ -27,7 +27,7 @@ for x in items:
         if (temp + remainder) >= 100:
             password += 1
     elif direction == "L":
-        if (temp - remainder) <= 0:
+        if (temp - remainder) < 0:
             password += 1
 
     totalValue %= 100
